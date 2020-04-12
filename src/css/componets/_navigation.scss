@@ -1,0 +1,95 @@
+.navigation{
+    width: 100%;
+    background-color: $blue;
+    
+    @media screen and (min-width: $screen-tablet){
+        width: 100%;
+        position: absolute;
+        left: 0;
+        bottom: 0; 
+    }
+    
+
+    @media screen and (min-width: $screen-desktop){
+        width: 100%;
+        position: absolute;
+        left: 0;
+        bottom: 0;   
+    }
+
+&__container{
+    width: 100%;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;  
+
+    @media screen and (min-width: $screen-desktop){
+        @include flex-row(flex-start);
+        padding-top: 20px;
+        padding-bottom: 25px;
+        padding-left: 72px;
+        // display: flex;
+        // flex-direction: column;
+        // justify-content: center;
+        // align-items: center;  
+    }
+}
+
+&__logo{
+    display: none;
+        @media screen and (min-width: $screen-desktop){
+             display: block;
+             margin-right:35%;
+    }
+}
+&__list{
+    // @include flex-row;
+  @include flex-center;
+  @media screen and (min-width: $screen-desktop){
+       @include flex-row;
+  }
+
+   }
+&__link{
+    font-family: $base-font;
+    font-size: 11px;
+    font-weight: 300;
+    color: $white;
+    text-transform: uppercase;
+    letter-spacing: 0.8px;
+    text-decoration: none;
+    position: relative;
+    transition: all 0.7sec ease;
+}
+
+&__link::after{
+    content: "";
+    position:absolute;
+    left: 5px;
+    bottom: -5px;
+    height: 2px;
+    width: 90%;
+    background-color: red;
+    visibility: hidden;
+}
+&__link:hover{
+    opacity: 0.5;
+   &::after{
+       visibility: visible;
+   }
+    
+}
+&__item:not(:last-child){
+   margin-right: 0px;
+   margin-bottom: 10px;
+   @media screen and (min-width: $screen-desktop){
+    margin-right: 35px;
+    margin-bottom: 0px;   
+   }
+
+}
+
+}

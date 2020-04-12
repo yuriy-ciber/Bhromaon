@@ -1,0 +1,55 @@
+.card-text{
+        padding-left: 15px;
+        padding-right: 15px;
+        padding-top: 15px;
+
+        @media screen and (min-width: $screen-tablet){
+            width: 70%;
+        }
+
+        @media screen and (min-width: $screen-desktop){
+            padding-top: 0;
+        }
+
+    &__title{
+        text-align: center;
+        font-family: $base-font;
+        color:$white;
+        font-size: $H600;
+        font-weight: 400;
+        line-height: 26px;
+        margin-bottom: 32px;
+
+        @media screen and (min-width: $screen-desktop){
+            text-align: left;
+           font-family: $base-font;
+           color:$white;
+           font-size: $H600;
+           font-weight: 400;
+           line-height: 26px;
+           letter-spacing: 0.6px;
+           margin-bottom: 53px;  
+        }
+    }
+    &__subtitle{
+        width: 100%;
+        font-family: $secondary-font;
+        font-size: $H100;
+        font-weight: 100;
+        color: $grey-light;
+        letter-spacing: 1.6px;
+        margin-bottom: 20px;
+
+
+        @media screen and (min-width: $screen-desktop){
+            width: 475px;
+            font-family: $secondary-font;
+            font-size: 12px;
+            font-weight: 100;
+            line-height: 24px;
+            color: $grey-light;
+            letter-spacing: 1px;
+            margin-bottom: 25px;
+        }
+    }
+}

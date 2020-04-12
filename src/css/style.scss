@@ -1,0 +1,23 @@
+@import url('https://fonts.googleapis.com/css?family=Aleo:400,700|Josefin+Sans&display=swap');
+@import './core/vars';
+@import './core/mixins';
+@import './core/common';
+@import "./core/inheritace";
+
+//общие стили
+@import "./componets/common/input";
+@import "./componets/common/button";
+@import "./componets/common/logo";
+@import "./componets/common/link-card";
+@import "./componets/common/block-social";
+@import "./componets/common/card";
+@import "./componets/common/card-town";
+@import "./componets/common/card-text";
+
+@import "./componets/header";
+@import "./componets/navigation";
+@import "./componets/places";
+@import "./componets/mountan";
+@import "./componets/why";
+@import "./componets/search";
+@import "./componets/footer";

@@ -1,0 +1,76 @@
+.card-town{
+    width: 90%;
+    background-color: rgba(35, 35, 35,0.75);
+    padding: 50px 32px 50px 30px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 30px;
+
+    @media screen and (min-width: $screen-tablet){
+        width: 70%;
+    }
+
+    @media screen and (min-width: $screen-desktop){
+
+        width: fit-content;
+        background-color: rgba(35, 35, 35,0.9);
+        padding: 40px 0px 40px 25px;
+    }
+
+    &__subtitle{
+        display: block;
+        color: $grey-light;
+        font-size: $H200;
+        font-family: $base-font;
+        line-height: 26px;
+        font-weight: 400;
+        margin-bottom: 15px;
+    }
+  
+    &__title{
+        color: $white;
+        font-family: $secondary-font;
+        font-size: $H200;
+        font-weight: 400;
+        line-height: 26px;
+        text-transform: uppercase;
+        margin-bottom: 15px;
+
+        @media screen and (min-width: $screen-desktop){
+            color: $white;
+            font-family: $secondary-font;
+            font-size: $H200;
+            font-weight: 400;
+            line-height: 26px;
+            text-transform: uppercase;
+            margin-bottom: 11px; 
+        }
+    }
+    &__text{
+        width: 100%;
+        font-family: $secondary-font;
+        color: $grey-light;
+        font-weight: 400;
+        font-size: $H50;
+        margin-bottom: 25px;
+        line-height: 26px;
+
+        @media screen and (min-width: $screen-desktop){
+            width: 445px;
+            font-family: $secondary-font;
+            color: $grey-light;
+            font-weight: 400;
+            font-size: $H50;
+            margin-bottom: 32px;
+            line-height: 26px;
+        }
+    }
+    &__button{
+            width: 100%;
+           display: block;
+            @media screen and (min-width: $screen-desktop){
+                padding: 21px 54px 20px 53px;
+                width: fit-content;
+          }
+    }
+}

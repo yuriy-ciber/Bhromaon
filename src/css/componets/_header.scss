@@ -1,0 +1,102 @@
+.header {
+  height: 100vh;
+  background-image: url(../images/header.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-size: 320%;
+  background-position: center;
+  background-position-y: 1%;
+  background-position-x: 10%;
+  position: relative;
+ 
+  @media screen and (min-width: $screen-desktop) {
+  background-size: 100%;
+  }
+    
+
+  &__container {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 220px;
+
+    @media screen and (min-width: $screen-tablet){
+      padding-top: 320px;
+    }
+    
+
+    @media screen and (min-width: $screen-desktop) {
+      display: flex;
+      justify-content: flex-start;
+      flex-direction: column;
+      align-items: center;
+      padding-top: 235px;
+    }
+    
+  }
+  &__title {
+    font-family: $secondary-font;
+    font-size: 38px;
+    line-height: 26px;
+    color: $white;
+    text-transform: uppercase;
+    letter-spacing: 6.6px;
+    margin-bottom: 11px;
+
+  }
+  &__subtitle {
+    font-family: $secondary-font;
+    font-size: $H100;
+    color: $white;
+    font-weight: 400;
+    line-height: 26px;
+    letter-spacing: 6px;
+    margin-bottom: 35px;
+
+    @media screen and (min-width: $screen-desktop) {
+      font-size: $H100;
+      color: $white;
+    }   
+  }
+
+  &__form{
+    margin-bottom: 0px;
+    flex-direction: column;
+
+    @media screen and (min-width: $screen-tablet){
+      margin-bottom: 100px;
+    }
+
+     @media screen and (min-width: $screen-desktop){
+       flex-direction: row;
+       margin-bottom: 69px;
+    } 
+  }
+  
+  &__scroll{
+    @include flex-center;
+  }
+  &__scroll-text{
+    text-align: center;
+    font-family: $secondary-font;
+    font-size: $H10;
+    font-weight: 100;
+    line-height: 26px;
+    letter-spacing: 2.8px;
+    color:$white;
+    margin-bottom: 5px;
+  }
+  &__icon{
+    @include svg(12px,$white);
+    margin-bottom: 20px;
+
+    @media screen and (min-width: $screen-desktop) {
+      margin-bottom: 80px;
+    }
+      
+  }
+  &__icon:hover{
+    transform: translateY(5px);
+  }
+}

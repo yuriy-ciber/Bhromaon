@@ -1,0 +1,28 @@
+.mountan{
+    height: 600px;
+    background-image: url(../images/section-3.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position:center;
+    background-position-y: 94%;
+    padding-bottom: 20px;
+
+    @media screen and (min-width: $screen-desktop){
+       padding-bottom: 83px;
+       padding-right: 140px;
+    }
+    &__container{ 
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items:flex-end;
+
+        @media screen and (min-width: $screen-desktop){
+            height: 100%;
+            display: flex;
+            justify-content: flex-end;
+            align-items: flex-end; 
+        }
+           
+    }
+}

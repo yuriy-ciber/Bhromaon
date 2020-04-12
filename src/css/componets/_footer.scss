@@ -1,0 +1,51 @@
+.footer{
+    @extend %section;
+    background-image:linear-gradient(to top, rgba(51,51,51,0.9), rgba(51,51,51,0.9)), url(../images/section-4.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding-top: 100px;
+    height: 100%;
+
+    @media screen and (min-width: $screen-tablet){
+        background-size: 230%;
+        background-position: 10% 100%;
+    }
+
+    @media screen and (min-width: $screen-desktop){
+        background-image:linear-gradient(to top, rgba(51,51,51,0.9), rgba(51,51,51,0.9)), url(../images/section-4.png);
+        background-size: cover;
+        background-size: 100%;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-position-y: 160%;
+        padding-top: 107px;
+    }
+
+    &__container{
+        height: 100%;
+        @include flex-center;
+    }
+
+    &__title{
+        color:$white;
+        font-family: $base-font;
+        font-size: $H600;
+        font-weight: 400;
+        line-height: 26px;
+        margin-bottom: 80px;
+
+        @media screen and (min-width: $screen-desktop){
+            color:$white;
+            font-family: $base-font;
+            font-size: 30px;
+            font-weight: 400;
+            line-height: 26px;
+            letter-spacing: 1px;
+            margin-bottom: 80px;
+        }
+    }
+    &__card{
+        margin-bottom: 185px;
+    }
+}

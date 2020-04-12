@@ -1,0 +1,38 @@
+// Colors
+$white: #FFFFFF;
+$light: #FEFEFE;
+$grey-light: #E8E8E8;
+$grey: #CCCCCC;
+$grey-dark:#999999;
+$dark: #333333;
+$darker: #232323;
+$blue: #5474FD;
+
+$btn-shadow: 0 5px 20px rgba(228, 228, 21, 0.5);
+
+// Fonts
+$base-font: "Aleo", serif;
+$secondary-font: "Josefin Sans", sans-serif;
+
+@function calcRem($size) {
+  $remSize: $size / 16px;
+  @return #{$remSize}rem;
+}
+
+$H900: calcRem(90px);
+$H800: calcRem(60px);
+$H700: calcRem(48px);
+$H600: calcRem(30px);
+$H500: calcRem(24px);
+$H400: calcRem(22px);
+$H300: calcRem(20px);
+$H200: calcRem(17px);
+$H100: calcRem(16px);
+$H50: calcRem(14px);
+$H10: calcRem(13px);
+$H5: calcRem(10px);
+$H5: calcRem(7px);
+
+
+$screen-desktop: 1024px;
+$screen-tablet: 768px;

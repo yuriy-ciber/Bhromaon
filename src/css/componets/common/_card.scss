@@ -1,0 +1,90 @@
+.card{
+    width: 100%;
+    height: auto;
+    background-color:$dark;
+    @include flex-center;
+
+       @media screen and (min-width: $screen-desktop){
+        @include flex-row;
+    }
+
+    &__image-wrap{
+        @include padding-hack(60%,none);
+        width: 100%;
+
+        @media screen and (min-width: $screen-tablet){
+          @include padding-hack(40%,none);
+          
+        }
+
+        @media screen and (min-width: $screen-desktop){
+          @include padding-hack(24%,none);
+            width: 445px;
+         
+        } 
+    }
+
+    
+  &__content {
+    padding: 15px;
+
+    @media screen and (min-width: $screen-tablet){
+      width: 70%;
+      padding: 0 15px;
+    }
+
+    @media screen and (min-width: $screen-desktop){
+      // min-width: 400px;
+      padding: 0 20px 0 20px;
+    }
+   
+  }
+  &__user{
+    display: inline-block;
+    color: $light;
+    font-family: $secondary-font;
+    font-size: $H300;
+    font-weight: 400;
+    line-height: 26px;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+
+    @media screen and (min-width: $screen-desktop){
+      color: $light;
+      font-family: $secondary-font;
+      font-size: $H300;
+      font-weight: 400;
+      letter-spacing: 2px;
+      line-height: 26px;
+      text-transform: uppercase;
+      margin-bottom: 33px;
+
+    }
+  }
+  &__text{
+    width: 100%;
+    color: $grey-light;
+    font-family: $base-font;
+    font-size: $H100;
+    font-weight: 400;
+    line-height: 26px;
+
+    @media screen and (min-width: $screen-desktop){
+      width: 500px;
+      color: $grey-light;
+      font-family: $secondary-font;
+      font-size: $H50;
+      font-weight: 100;
+      line-height: 26px;
+  
+    }
+    
+  }
+  &__item{
+    display: block;
+    font-size: 2.5rem;
+    color:blue;
+    float: left;
+    padding-right: 6px;
+  }
+}
