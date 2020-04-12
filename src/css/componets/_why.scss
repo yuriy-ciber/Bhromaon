@@ -57,6 +57,10 @@
          padding-left: 15px;
          padding-right: 15px;
 
+         @media screen and (min-width: $screen-mobile){
+            margin-bottom: 120px; 
+        }
+
          @media screen and (min-width: $screen-tablet){
              margin-bottom: 130px;
          }
