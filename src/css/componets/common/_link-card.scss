@@ -1,12 +1,9 @@
 .link-card{
-    // &:hover+&__icon{
-    //   @include svg(50px,red);
-    // }
-  // @include flex-center;
   display: flex;
   justify-content: center;
   flex-direction: column;
   align-items: center;
+  
 
   &__text{
       color: $grey-light;
@@ -15,6 +12,7 @@
       font-weight: 300;
       line-height: 26px;
       letter-spacing: 0.5px;
+
       @media screen and (min-width: $screen-desktop){
         color: $grey-light;
         font-size: 30px;

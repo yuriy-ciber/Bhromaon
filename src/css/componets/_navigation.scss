@@ -1,6 +1,10 @@
 .navigation{
     width: 100%;
     background-color: $blue;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    bottom: 0; 
     
     @media screen and (min-width: $screen-tablet){
         width: 100%;

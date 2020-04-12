@@ -13,12 +13,13 @@
             z-index: 2;
         
     }
-    // &__container{
-    //     height: 100%;
-    // }
 
     &__list{
         @include flex-center;
+
+        @media screen and (min-width: $screen-tablet){
+            @include flex-row;  
+        }
         
         @media screen and (min-width: $screen-desktop){
             @include flex-row;
@@ -28,6 +29,11 @@
     &__item:not(:last-child){
         margin-right: 0px;
         margin-bottom: 15px;
+
+        @media screen and (min-width: $screen-tablet){
+                margin-right: 80px; 
+                margin-bottom: 0px;
+        }
 
         @media screen and (min-width: $screen-desktop){
 
